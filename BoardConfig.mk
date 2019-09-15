@@ -12,6 +12,13 @@ TARGET_KERNEL_CONFIG := lineage_gts210wifi_defconfig
 # Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
+# RIL
+BOARD_MODEM_TYPE := m7450
+BOARD_PROVIDES_LIBRIL := true
+
 # Recovery
 TARGET_OTA_ASSERT_DEVICE := gts210wifi,gts210wifixx
 
