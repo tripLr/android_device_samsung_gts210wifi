@@ -16,5 +16,9 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
 	device/samsung/gts210wifi/overlay
 
+# Telephony
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/gts210wifi/gts210wifi-vendor.mk)
